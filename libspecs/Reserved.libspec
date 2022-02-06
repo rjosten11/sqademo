@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="Reserved" type="LIBRARY" format="ROBOT" scope="GLOBAL" generated="2022-02-06T12:55:01Z" specversion="3" source="C:\Users\Yema\AppData\Local\Programs\Python\Python39\lib\site-packages\robot\libraries\Reserved.py" lineno="23">
+<version />
+<doc>Documentation for library ``Reserved``.</doc>
+<tags>
+</tags>
+<inits>
+</inits>
+<keywords>
+<kw name="Break" lineno="34">
+<arguments repr="*args, **kwargs">
+<arg kind="VAR_POSITIONAL" required="false" repr="*args">
+<name>args</name>
+</arg>
+<arg kind="VAR_NAMED" required="false" repr="**kwargs">
+<name>kwargs</name>
+</arg>
+</arguments>
+<doc />
+<shortdoc />
+</kw>
+<kw name="Continue" lineno="34">
+<arguments repr="*args, **kwargs">
+<arg kind="VAR_POSITIONAL" required="false" repr="*args">
+<name>args</name>
+</arg>
+<arg kind="VAR_NAMED" required="false" repr="**kwargs">
+<name>kwargs</name>
+</arg>
+</arguments>
+<doc />
+<shortdoc />
+</kw>
+<kw name="Elif" lineno="34">
+<arguments repr="*args, **kwargs">
+<arg kind="VAR_POSITIONAL" required="false" repr="*args">
+<name>args</name>
+</arg>
+<arg kind="VAR_NAMED" required="false" repr="**kwargs">
+<name>kwargs</name>
+</arg>
+</arguments>
+<doc />
+<shortdoc />
+</kw>
+<kw name="Else" lineno="34">
+<arguments repr="*args, **kwargs">
+<arg kind="VAR_POSITIONAL" required="false" repr="*args">
+<name>args</name>
+</arg>
+<arg kind="VAR_NAMED" required="false" repr="**kwargs">
+<name>kwargs</name>
+</arg>
+</arguments>
+<doc />
+<shortdoc />
+</kw>
+<kw name="Else If" lineno="34">
+<arguments repr="*args, **kwargs">
+<arg kind="VAR_POSITIONAL" required="false" repr="*args">
+<name>args</name>
+</arg>
+<arg kind="VAR_NAMED" required="false" repr="**kwargs">
+<name>kwargs</name>
+</arg>
+</arguments>
+<doc />
+<shortdoc />
+</kw>
+<kw name="End" lineno="34">
+<arguments repr="*args, **kwargs">
+<arg kind="VAR_POSITIONAL" required="false" repr="*args">
+<name>args</name>
+</arg>
+<arg kind="VAR_NAMED" required="false" repr="**kwargs">
+<name>kwargs</name>
+</arg>
+</arguments>
+<doc />
+<shortdoc />
+</kw>
+<kw name="For" lineno="34">
+<arguments repr="*args, **kwargs">
+<arg kind="VAR_POSITIONAL" required="false" repr="*args">
+<name>args</name>
+</arg>
+<arg kind="VAR_NAMED" required="false" repr="**kwargs">
+<name>kwargs</name>
+</arg>
+</arguments>
+<doc />
+<shortdoc />
+</kw>
+<kw name="If" lineno="34">
+<arguments repr="*args, **kwargs">
+<arg kind="VAR_POSITIONAL" required="false" repr="*args">
+<name>args</name>
+</arg>
+<arg kind="VAR_NAMED" required="false" repr="**kwargs">
+<name>kwargs</name>
+</arg>
+</arguments>
+<doc />
+<shortdoc />
+</kw>
+<kw name="Return" lineno="34">
+<arguments repr="*args, **kwargs">
+<arg kind="VAR_POSITIONAL" required="false" repr="*args">
+<name>args</name>
+</arg>
+<arg kind="VAR_NAMED" required="false" repr="**kwargs">
+<name>kwargs</name>
+</arg>
+</arguments>
+<doc />
+<shortdoc />
+</kw>
+<kw name="While" lineno="34">
+<arguments repr="*args, **kwargs">
+<arg kind="VAR_POSITIONAL" required="false" repr="*args">
+<name>args</name>
+</arg>
+<arg kind="VAR_NAMED" required="false" repr="**kwargs">
+<name>kwargs</name>
+</arg>
+</arguments>
+<doc />
+<shortdoc />
+</kw>
+</keywords>
+<datatypes>
+</datatypes>
+</keywordspec>

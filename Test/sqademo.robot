@@ -2,6 +2,8 @@
 Library    SeleniumLibrary
 Library    FakerLibrary    WITH NAME    faker
 Test Setup    Open Browser    ${demoUrl}    ${browser}
+Maximize Browser Window
+Test Teardown    Close Browser
 
 
 
@@ -89,7 +91,7 @@ Create employee with login details
     And user creates password
     And user sets the status
     When user clicks save button
-    Then user is in the personal details page
+    Then user is in the personal details page 
     
 Create employee details
     Given user is logged in
@@ -110,41 +112,11 @@ Delete employees except admin
     Given user is logged in
     and user is in the employees page
     and Delete all employees except hr
-
-
-
-
- *** Comments ***
-Delete all employees
-    Given user is logged in
-    and user is in the employees page
-    and user clicks the select all checkbox
-    and user clicks delete
-    when user confirms modal
-    then employee table should be empty
-    
-Loop Create employees
-    Given user is logged in
-    FOR    ${i}    IN RANGE    20
-        Given user is logged in
-        And new employee has been created
-        And user clicks "//input[@id="btnSave"][@value="Edit"]" button
-        And user enters other id
-        And user enters drivers license
-        And user enters ssn number and sin number
-        and user selects gender
-        and user selects marital status
-        and user selects nationality
-        and user enters date of birth
-        when user clicks "//*[@id="btnSave"]" button
-        then save button should change into edit
-    END
-
 *** Keywords ***
 Delete all employees except hr
     FOR    ${i}    IN RANGE    9999
         ${numofRows}    Get Element Count    //*[@id="resultTable"]/tbody/tr
-        Exit For Loop If    ${numofRows}<3
+        Exit For Loop If    ${numofRows}<=3
         Select all employees except admin
         user clicks delete
         user confirms modal

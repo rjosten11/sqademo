@@ -2,7 +2,6 @@
 Library    SeleniumLibrary
 Library    FakerLibrary    WITH NAME    faker
 Test Setup    Open Browser    ${demoUrl}    ${browser}
-Maximize Browser Window
 Test Teardown    Close Browser
 
 
@@ -108,15 +107,16 @@ Create employee details
     then save button should change into edit
     
 
-Delete employees except admin
+Delete employees except hr
     Given user is logged in
-    and user is in the employees page
-    and Delete all employees except hr
+    When user is in the employees page
+    Then Loop Select and Delete all employees except hr
+
 *** Keywords ***
-Delete all employees except hr
+Loop Select and Delete all employees except hr
     FOR    ${i}    IN RANGE    9999
         ${numofRows}    Get Element Count    //*[@id="resultTable"]/tbody/tr
-        Exit For Loop If    ${numofRows}<=3
+        Exit For Loop If    ${numofRows}<3
         Select all employees except admin
         user clicks delete
         user confirms modal
@@ -134,7 +134,8 @@ Login page will show invalid credentials
 Select all employees except admin
     Wait Until Element Is Visible    //*[@id="resultTable"]/tbody/tr
     ${numofRows}    Get Element Count    //*[@id="resultTable"]/tbody/tr
-    FOR    ${rowCurrent}    IN RANGE    ${numofRows}
+    FOR    ${rowCurrent}    IN RANGE    51
+        Exit For Loop If    '${rowCurrent}' > '${numofRows}'
         Continue For Loop If    '${rowCurrent}' == '${0}'
         ${posXpath}    Table Selector "${rowCurrent}" "${5}"
         ${pos}    Get Text    xpath:${posXpath}
